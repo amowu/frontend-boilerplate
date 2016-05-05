@@ -4,7 +4,8 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 const state = {
-  todos: []
+  todos: [],
+  visibility: 'all'
 }
 
 const mutations = {
@@ -30,6 +31,9 @@ const mutations = {
   },
   CLEAR_COMPLETED (state) {
     state.todos = state.todos.filter(todo => !todo.done)
+  },
+  CHANGE_VISIBILITY (state, visibility) {
+    state.visibility = visibility
   }
 }
 

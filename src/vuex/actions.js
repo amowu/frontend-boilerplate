@@ -4,6 +4,7 @@ export const toggleTodo = makeAction('TOGGLE_TODO')
 export const editTodo = makeAction('EDIT_TODO')
 export const toggleAll = makeAction('TOGGLE_ALL')
 export const clearCompleted = makeAction('CLEAR_COMPLETED')
+export const changeVisibility = makeAction('CHANGE_VISIBILITY')
 
 function makeAction (type) {
   return ({ dispatch }, ...args) => dispatch(type, ...args)
