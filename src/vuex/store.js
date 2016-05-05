@@ -4,7 +4,15 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 const state = {
-  todos: [],
+  todos: [
+    { text: 'Webpack', done: true },
+    { text: 'Vue.js', done: true },
+    { text: 'Vuex', done: true },
+    { text: 'Babel', done: true },
+    { text: 'vue-router', done: false },
+    { text: 'Vue.js devtools Extension', done: true },
+    { text: 'TodoMVC example', done: true }
+  ],
   visibility: 'all'
 }
 

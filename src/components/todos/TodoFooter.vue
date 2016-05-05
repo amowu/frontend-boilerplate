@@ -16,19 +16,21 @@
 </script>
 
 <template>
-  <footer v-show='todos.length'>
-    <span>
+  <footer class='footer' v-show='todos.length'>
+    <span class='todo-count'>
       <strong>{{ remaining }}</strong>
       {{ remaining | pluralize 'item' }} left
     </span>
-    <ul>
+    <ul class='filters'>
       <li v-for='(key, val) in filters'>
         <a href='#/{{ $key }}' @click='changeVisibility(key)'>
           {{ key | capitalize }}
         </a>
       </li>
     </ul>
-    <button v-show='todos.length > remaining' @click='clearCompleted'>
+    <button class='clear-completed'
+      v-show='todos.length > remaining'
+      @click='clearCompleted'>
       Clear completed
     </button>
   </footer>

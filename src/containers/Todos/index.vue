@@ -1,7 +1,11 @@
+<style src="./todomvc-app-css.css"></style>
+
 <script>
-  import TodoHeader from '../../components/TodoHeader'
-  import TodoMain from '../../components/TodoMain'
-  import TodoFooter from '../../components/TodoFooter'
+  import {
+    TodoHeader,
+    TodoMain,
+    TodoFooter
+  } from '../../components/todos'
   import {
     addTodo,
     changeVisibility,
@@ -59,7 +63,7 @@
 </script>
 
 <template>
-  <section>
+  <section class='todoapp'>
     <todo-header
       :add-todo='addTodo'>
     </todo-header>

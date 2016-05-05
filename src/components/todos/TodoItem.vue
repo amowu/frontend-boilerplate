@@ -39,17 +39,19 @@
 </script>
 
 <template>
-  <li>
-    <div>
-      <input type='checkbox'
+  <li class='todo' :class='{ completed: todo.done, editing: editing }'>
+    <div class='view'>
+      <input class='toggle'
+        type='checkbox'
         :checked='todo.done'
         @change='toggleTodo(todo)'>
       <label v-text='todo.text'
         @dblclick='editing = true'>
       </label>
-      <button @click='deleteTodo(todo)'></button>
+      <button class='destroy' @click='deleteTodo(todo)'></button>
     </div>
-    <input v-show='editing'
+    <input class='edit'
+      v-show='editing'
       v-focus='editing'
       :value='todo.text'
       @keyup.enter='doneEdit'

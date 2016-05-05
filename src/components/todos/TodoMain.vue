@@ -1,5 +1,5 @@
 <script>
-  import TodoItem from '../../components/TodoItem'
+  import TodoItem from './TodoItem'
 
   export default {
     props: [
@@ -17,11 +17,12 @@
 </script>
 
 <template>
-  <section>
-    <input type='checkbox'
+  <section class='main' v-show='todos.length'>
+    <input class='toggle-all'
+      type='checkbox'
       :checked='allChecked'
       @change='toggleAll(!allChecked)'>
-    <ul>
+    <ul class='todo-list'>
       <todo-item v-for='todo in todos'
         :todo='todo'
         :toggle-todo='toggleTodo'

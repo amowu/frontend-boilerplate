@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import store from './vuex/store'
-import App from './containers/App'
+import Todos from './containers/Todos'
 
 /* eslint-disable no-new */
 new Vue({
   store,
   el: 'body',
-  components: { App }
+  components: { Todos }
 })

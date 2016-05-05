@@ -1,5 +1,5 @@
 <script>
-  import TodoTextInput from '../TodoTextInput'
+  import TodoTextInput from './TodoTextInput'
 
   export default {
     props: [
@@ -12,7 +12,7 @@
 </script>
 
 <template>
-  <header>
+  <header class='header'>
     <h1>Todos</h1>
     <todo-text-input :add-todo='addTodo'></todo-text-input>
   </header>
