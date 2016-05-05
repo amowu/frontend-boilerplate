@@ -1,7 +1,7 @@
 {
   "name": "frontend-boilerplate",
   "version": "1.0.0",
-  "description": "A Vue.js project",
+  "description": "A frontend boilerplate based on Vue, Vuex and Vue Router.",
   "author": "Amo Wu <amo260@gmail.com>",
   "private": true,
   "scripts": {
