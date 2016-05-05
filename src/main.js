@@ -1,10 +1,9 @@
-import Vue from 'vue'
-import store from './vuex/store'
-import Todos from './containers/Todos'
+import { sync } from 'vuex-router-sync'
 
-/* eslint-disable no-new */
-new Vue({
-  store,
-  el: 'body',
-  components: { Todos }
-})
+import router from './vuex/router'
+import store from './vuex/store'
+import App from './pages/App'
+
+sync(store, router)
+
+router.start(App, '#app')

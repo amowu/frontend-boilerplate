@@ -9,7 +9,8 @@ const state = {
     { text: 'Vue.js', done: true },
     { text: 'Vuex', done: true },
     { text: 'Babel', done: true },
-    { text: 'vue-router', done: false },
+    { text: 'vue-router', done: true },
+    { text: 'vue-router-sync', done: true },
     { text: 'Vue.js devtools Extension', done: true },
     { text: 'TodoMVC example', done: true }
   ],
