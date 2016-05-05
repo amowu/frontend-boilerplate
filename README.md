@@ -13,9 +13,9 @@
 - [x] [Babel](https://babeljs.io/)
 - [x] [Vue.js devtools Extension](https://github.com/vuejs/vue-devtools)
 - [x] [TodoMVC example](https://github.com/tastejs/todomvc-app-css)
-- [] ESLint
-- [] Continuous Integration (CircleCI)
-- [] Continuous Delivery (GitHub Page)
+- [ ] ESLint
+- [ ] Continuous Integration (CircleCI)
+- [ ] Continuous Delivery (GitHub Page)
 
 ## Setup
 
