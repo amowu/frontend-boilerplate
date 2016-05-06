@@ -8,12 +8,13 @@
 - [x] [Vuex](https://github.com/vuejs/vuex)
 - [x] [vue-router](https://github.com/vuejs/vue-router)
 - [x] [vuex-router-sync](https://github.com/vuejs/vuex-router-sync)
-- [x] [Webpack](https://webpack.github.io)
-- [x] [vue-loader](https://github.com/vuejs/vue-loader)
+- [x] [Webpack](https://webpack.github.io) ([vue-loader](https://github.com/vuejs/vue-loader))
 - [x] [Babel](https://babeljs.io/)
 - [x] [Vue.js devtools Extension](https://github.com/vuejs/vue-devtools)
 - [x] [TodoMVC example](https://github.com/tastejs/todomvc-app-css)
-- [ ] ESLint
+- [x] [ESLint](https://github.com/eslint/eslint) ([Standard](https://github.com/feross/eslint-config-standard))
+- [ ] Unit Test
+- [ ] E2E Test
 - [ ] Continuous Integration (CircleCI)
 - [ ] Continuous Delivery (GitHub Page)
 
@@ -49,7 +50,7 @@ Run unit tests:
 npm run unit
 ```
 
-Run e2e tests:
+Run E2E tests:
 
 ```sh
 npm run e2e
