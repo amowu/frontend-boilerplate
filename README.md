@@ -14,7 +14,7 @@
 - [x] [TodoMVC example](https://github.com/tastejs/todomvc-app-css)
 - [x] [ESLint](https://github.com/eslint/eslint) ([Standard](https://github.com/feross/eslint-config-standard))
 - [ ] Unit Test
-- [ ] e2e Test
+- [ ] E2E Test
 - [ ] Continuous Integration (CircleCI)
 - [ ] Continuous Delivery (GitHub Page)
 
@@ -50,7 +50,7 @@ Run unit tests:
 npm run unit
 ```
 
-Run e2e tests:
+Run E2E tests:
 
 ```sh
 npm run e2e
