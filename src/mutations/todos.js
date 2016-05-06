@@ -6,7 +6,7 @@ import {
   EDIT_TODO,
   TOGGLE_ALL_TODO,
   TOGGLE_TODO
-} from '../types'
+} from '../core/types'
 
 const state = {
   todos: [

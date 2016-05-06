@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import todos from './mutations/todos'
+import todos from '../mutations/todos'
 
 Vue.use(Vuex)
 

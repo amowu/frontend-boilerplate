@@ -7,7 +7,7 @@
       'allChecked',
       'deleteTodo',
       'editTodo',
-      'toggleAll',
+      'toggleAllTodo',
       'toggleTodo'
     ],
     components: {
@@ -21,7 +21,7 @@
     <input class='toggle-all'
       type='checkbox'
       :checked='allChecked'
-      @change='toggleAll(!allChecked)'>
+      @change='toggleAllTodo(!allChecked)'>
     <ul class='todo-list'>
       <todo-item v-for='todo in todos'
         :todo='todo'

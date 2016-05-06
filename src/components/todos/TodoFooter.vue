@@ -4,8 +4,8 @@
       'todos',
       'filters',
       'visibility',
-      'changeVisibility',
-      'clearCompleted'
+      'changeTodoVisibility',
+      'clearCompletedTodo'
     ],
     computed: {
       remaining () {
@@ -23,14 +23,14 @@
     </span>
     <ul class='filters'>
       <li v-for='(key, val) in filters'>
-        <a href='#/{{ $key }}' @click='changeVisibility(key)'>
+        <a href='#/{{ $key }}' @click='changeTodoVisibility(key)'>
           {{ key | capitalize }}
         </a>
       </li>
     </ul>
     <button class='clear-completed'
       v-show='todos.length > remaining'
-      @click='clearCompleted'>
+      @click='clearCompletedTodo'>
       Clear completed
     </button>
   </footer>

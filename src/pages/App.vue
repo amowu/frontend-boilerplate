@@ -1,5 +1,5 @@
 <script>
-  import store from '../vuex/store'
+  import store from '../core/store'
 
   export default {
     store

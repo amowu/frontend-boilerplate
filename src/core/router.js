@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Todos from './pages/Todos'
+import Todos from '../pages/Todos'
 
 Vue.use(VueRouter)
 
