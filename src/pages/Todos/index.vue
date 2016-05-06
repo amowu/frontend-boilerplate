@@ -30,8 +30,8 @@
     },
     vuex: {
       getters: {
-        todos: state => state.todos,
-        visibility: state => state.visibility
+        todos: state => state.todos.todos,
+        visibility: state => state.todos.visibility
       },
       actions: {
         addTodo,
