@@ -17,7 +17,12 @@ const state = {
     { text: 'vue-router', done: true },
     { text: 'vue-router-sync', done: true },
     { text: 'Vue.js devtools Extension', done: true },
-    { text: 'TodoMVC example', done: true }
+    { text: 'TodoMVC example', done: true },
+    { text: 'ESLint', done: false },
+    { text: 'Unit Test', done: false },
+    { text: 'E2E Test', done: false },
+    { text: 'Continuous Integration', done: false },
+    { text: 'Continuous Delivery', done: false }
   ],
   visibility: 'all'
 }
