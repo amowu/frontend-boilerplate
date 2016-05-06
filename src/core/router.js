@@ -5,7 +5,9 @@ import Todos from '../pages/Todos'
 
 Vue.use(VueRouter)
 
-const router = new VueRouter()
+const router = new VueRouter({
+  history: true
+})
 
 router.map({
   '/': {

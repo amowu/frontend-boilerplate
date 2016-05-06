@@ -8,13 +8,13 @@
   } from '../../components/todos'
   import {
     addTodo,
-    changeVisibility,
-    clearCompleted,
+    changeTodoVisibility,
+    clearCompletedTodo,
     deleteTodo,
     editTodo,
-    toggleAll,
+    toggleAllTodo,
     toggleTodo
-  } from '../../vuex/actions'
+  } from '../../actions/todos'
 
   const filters = {
     all: todos => todos,
@@ -30,16 +30,16 @@
     },
     vuex: {
       getters: {
-        todos: state => state.todos,
-        visibility: state => state.visibility
+        todos: state => state.todos.todos,
+        visibility: state => state.todos.visibility
       },
       actions: {
         addTodo,
-        changeVisibility,
-        clearCompleted,
+        changeTodoVisibility,
+        clearCompletedTodo,
         deleteTodo,
         editTodo,
-        toggleAll,
+        toggleAllTodo,
         toggleTodo
       }
     },
@@ -72,15 +72,15 @@
       :all-checked='allChecked'
       :delete-todo='deleteTodo'
       :edit-todo='editTodo'
-      :toggle-all='toggleAll'
+      :toggle-all-todo='toggleAllTodo'
       :toggle-todo='toggleTodo'>
     </todo-main>
     <todo-footer
       :todos='todos'
       :filters='filters'
       :visibility='visibility'
-      :clear-completed='clearCompleted'
-      :change-visibility='changeVisibility'>
+      :clear-completed-todo='clearCompletedTodo'
+      :change-todo-visibility='changeTodoVisibility'>
     </todo-footer>
   </section>
 </template>
