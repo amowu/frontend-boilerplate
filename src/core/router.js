@@ -1,9 +1,6 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import { VueRouter } from '../core'
 
 import Todos from '../pages/Todos'
-
-Vue.use(VueRouter)
 
 const router = new VueRouter({
   history: true
