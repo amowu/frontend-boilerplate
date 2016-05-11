@@ -1,5 +1,9 @@
 # Frontend Boilerplate
 
+[![CircleCI](https://img.shields.io/circleci/project/amowu/frontend-boilerplate.svg?style=flat-square)](https://circleci.com/gh/amowu/frontend-boilerplate)
+[![Dependency Status](https://img.shields.io/david/amowu/frontend-boilerplate.svg?style=flat-square)](https://david-dm.org/amowu/frontend-boilerplate)
+[![devDependency Status](https://img.shields.io/david/dev/amowu/frontend-boilerplate.svg?style=flat-square)](https://david-dm.org/amowu/frontend-boilerplate#info=devDependencies)
+
 ![cover](https://cloud.githubusercontent.com/assets/559351/15050550/1ffaae4c-1327-11e6-9886-bc3111cad94a.jpg)
 
 ## Contains
