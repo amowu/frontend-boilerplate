@@ -5,12 +5,12 @@
   "author": "Amo Wu <amo260@gmail.com>",
   "private": true,
   "scripts": {
+    "test": "npm run lint && npm run unit && npm run e2e",
     "dev": "node build/dev-server.js",
-    "build": "node build/build.js",
     "unit": "karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
-    "test": "npm run unit && npm run e2e",
-    "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
+    "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
+    "build": "node build/build.js"
   },
   "dependencies": {
     "babel-runtime": "^6.0.0",
