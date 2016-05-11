@@ -1,9 +1,6 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import { Vuex } from '../core'
 
 import todos from '../mutations/todos'
-
-Vue.use(Vuex)
 
 export default new Vuex.Store({
   modules: {

@@ -11,9 +11,8 @@
   }
 </script>
 
-<template>
-  <header class='header'>
-    <h1>Todos</h1>
-    <todo-text-input :add-todo='addTodo'></todo-text-input>
-  </header>
+<template lang='jade'>
+  header.header
+    h1 Todos
+    todo-text-input(:add-todo='addTodo')
 </template>
