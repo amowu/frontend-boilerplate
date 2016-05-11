@@ -15,23 +15,13 @@
   }
 </script>
 
-<template>
-  <footer class='footer' v-show='todos.length'>
-    <span class='todo-count'>
-      <strong>{{ remaining }}</strong>
+<template lang='jade'>
+  footer.footer(v-show='todos.length')
+    span.todo-count
+      strong {{ remaining }}
       {{ remaining | pluralize 'item' }} left
-    </span>
-    <ul class='filters'>
-      <li v-for='(key, val) in filters'>
-        <a href='#/{{ $key }}' @click='changeTodoVisibility(key)'>
-          {{ key | capitalize }}
-        </a>
-      </li>
-    </ul>
-    <button class='clear-completed'
-      v-show='todos.length > remaining'
-      @click='clearCompletedTodo'>
-      Clear completed
-    </button>
-  </footer>
+    ul.filters
+      li(v-for='(key, val) in filters')
+        a(href='#/{{ $key }}', @click='changeTodoVisibility(key)') {{ key | capitalize }}
+    button.clear-completed(v-show='todos.length > remaining', @click='clearCompletedTodo') Clear completed
 </template>

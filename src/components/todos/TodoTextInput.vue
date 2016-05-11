@@ -15,10 +15,10 @@
   }
 </script>
 
-<template>
-  <input class='new-todo'
-    autofocus
-    autocomplete='off'
-    placeholder='What needs to be done?'
-    @keyup.enter='tryAddTodo'>
+<template lang='jade'>
+  input.new-todo(
+    autofocus,
+    autocomplete='off',
+    placeholder='What needs to be done?',
+    @keyup.enter='tryAddTodo')
 </template>

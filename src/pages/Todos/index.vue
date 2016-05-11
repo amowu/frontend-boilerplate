@@ -1,4 +1,6 @@
-<style src="./todomvc-app-css.css"></style>
+<style lang='scss'>
+  @import './todomvc-app-css.css';
+</style>
 
 <script>
   import {
@@ -62,25 +64,20 @@
   }
 </script>
 
-<template>
-  <section class='todoapp'>
-    <todo-header
-      :add-todo='addTodo'>
-    </todo-header>
-    <todo-main
-      :todos='filteredTodos'
-      :all-checked='allChecked'
-      :delete-todo='deleteTodo'
-      :edit-todo='editTodo'
-      :toggle-all-todo='toggleAllTodo'
-      :toggle-todo='toggleTodo'>
-    </todo-main>
-    <todo-footer
-      :todos='todos'
-      :filters='filters'
-      :visibility='visibility'
-      :clear-completed-todo='clearCompletedTodo'
-      :change-todo-visibility='changeTodoVisibility'>
-    </todo-footer>
-  </section>
+<template lang='jade'>
+  section.todoapp
+    todo-header(:add-todo='addTodo')
+    todo-main(
+      :todos='filteredTodos',
+      :all-checked='allChecked',
+      :delete-todo='deleteTodo',
+      :edit-todo='editTodo',
+      :toggle-all-todo='toggleAllTodo',
+      :toggle-todo='toggleTodo')
+    todo-footer(
+      :todos='todos',
+      :filters='filters',
+      :visibility='visibility',
+      :clear-completed-todo='clearCompletedTodo',
+      :change-todo-visibility='changeTodoVisibility')
 </template>
