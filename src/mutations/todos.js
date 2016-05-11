@@ -10,15 +10,16 @@ import {
 
 const state = {
   todos: [
-    { text: 'Webpack', done: true },
     { text: 'Vue.js', done: true },
     { text: 'Vuex', done: true },
-    { text: 'Babel', done: true },
     { text: 'vue-router', done: true },
     { text: 'vue-router-sync', done: true },
+    { text: 'Webpack', done: true },
+    { text: 'vue-loader', done: true },
+    { text: 'Babel', done: true },
+    { text: 'ESLint', done: true },
     { text: 'Vue.js devtools Extension', done: true },
     { text: 'TodoMVC example', done: true },
-    { text: 'ESLint', done: true },
     { text: 'Unit Test', done: false },
     { text: 'E2E Test', done: false },
     { text: 'Continuous Integration', done: false },
